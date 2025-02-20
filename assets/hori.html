@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horizontal Line to the Right</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .line {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin: 20px 0;
+    }
+    .line span {
+      padding-right: 10px; /* Space between text and line */
+    }
+    .line::after {
+      content: "";
+      flex-grow: 1;
+      border-top: 2px solid #000; /* Adjust thickness and color */
+      margin-left: 10px; /* Space between text and line */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="line">
+      <span>Text with Horizontal Line</span>
+    </div>
+  </div>
+</body>
+</html>
